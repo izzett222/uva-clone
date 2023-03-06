@@ -15,13 +15,13 @@ export default function News() {
   const data = [
     {
       img: news1,
-      title: "Study in Amsterdam Week 20 - 24 Februa",
-      text: "When it comes to enhancing the sustainability of plastic bottles, consumers are willing to pay - the more so when the alternative is visually distinctive consumers are willing to pay a bonus for bio-based alternatives - the more so when the alternative is visually distinctive. This follows from ...",
+      title: "'Forever chemical' PFAS in Dutch drinking water",
+      text: "There’s PFAS coming out of our taps. New research by Mohammad Sadia, PhD candidate at the Institute for Biodiversity and Ecosystem Dynamics (IBED) – University of Amsterdam (UvA) shows that drinking water produced ...",
     },
     {
       img: news2,
-      title: "The UvA and the smart city",
-      text: "Find out how our cities are becoming smarter every day. UvA researchers are examining the pitfalls and the potential.",
+      title: "Teflon is so slippery because it slides on itself",
+      text: "The surface of Teflon – the non-stick coating in your pan – is incredibly slippery. Thanks to research carried out at the Institute of Physics (UvA) and research centre ARCNL, we finally know where this slipperiness ...",
     },
     {
       img: news3,
