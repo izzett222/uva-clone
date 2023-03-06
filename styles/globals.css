@@ -9,4 +9,9 @@
   .title--sm {
     @apply text-[#1f1d21] font-bold text-[1.375rem] leading-[25px] sm:leading-[27px] sm:text-[1.5rem]
   }
+  .shad {
+    filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, .1)) drop-shadow(1px 3px 2px rgba(0, 0, 0, .3));
+  }
+  .drop {
+    @apply group-hover:shad  }
 }

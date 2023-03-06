@@ -21,6 +21,9 @@ module.exports = {
         hover: "0 4px 4px rgb(0 0 0 / 15%)",
         "menu-hover": "0 4px 12px rgb(0 0 0 / 25%)"
       },
+      dropShadow: {
+        heart: "0px 25px 25px rgba(0, 0, 0, 0.15)"
+      },
       colors: {
         red: "#bd0032",
         txt: "#1f1d21"

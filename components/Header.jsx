@@ -120,13 +120,13 @@ export default function Header() {
                 </div>
               </form>
               <Link
-                href={"/"}
+                href={"/favourites"}
                 className="flex items-center gap-[5px] px-2 order-3 lg:order-[initial] group"
               >
-                <span className="hidden sm:inline-block group-hover:underline underline-offset-1 font-sans font-semibold leading-[16px] whitespace-nowrap w-max">
+                <span className="hidden sm:inline-block duration-100 group-hover:underline underline-offset-1 font-sans font-semibold leading-[16px] whitespace-nowrap w-max">
                   Compare programmes
                 </span>
-                <Image src={heart} className="hover:shadow-menu-hover" alt="" />
+                <Image src={heart} className="drop duration-100" alt="" />
               </Link>
               <Link
                 href={"/"}
