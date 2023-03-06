@@ -77,7 +77,7 @@ export default function Footer() {
     <footer className="mt-16 bg-[#1f1d20] pt-9">
       <Wrapper>
         <div className="flex justify-between items-center mb-12 relative">
-          <Image src={logo} alt="" className="h-[38px]" />
+          <Image src={logo} alt="" className="h-[35px] object-cover w-[360px]" />
           <div onClick={scrollToTop} className="bg-[#F9F9F9] absolute top-0 right-0 z-10 sm:static py-2 px-2 rounded-[2px] flex justify-center items-center w-fit -translate-y-2 flex-shrink-0">
             <Image src={right} alt="" className="-translate-y-[1px] -rotate-90 " />
           </div>

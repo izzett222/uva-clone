@@ -21,8 +21,8 @@ export default function Hero() {
   return (
     <div className="overflow-hidden">
       <Wrapper>
-        <div className="sm:w-[64.66667%] justify-between lg:w-auto lg:max-w-[1141.6px] mx-auto flex flex-col lg:flex-row relative -pt-6 sm:pt-[72px] sm:pb-[86px] -mb-8 sm:-mb-20 md:mb-32 lg:mb-20">
-          <div className="flex-1- lg:w-hero mb-6 pt-6 lg:pt-[72px]">
+        <div className="sm:w-[64.66667%] justify-between lg:w-auto lg:max-w-[1141.6px] mx-auto flex flex-col lg:flex-row relative pt-6- sm:pt-[72px] sm:pb-[86px] -mb-12 sm:-mb-20 md:mb-32 lg:mb-20">
+          <div className="flex-1- lg:w-hero mb-6 pt-3 sm:pt-6 lg:pt-[72px]">
             <h1 className="text-[42px] leading-[59px] font-bold text-[#1f1d21]">
               University of Amsterdam
             </h1>
@@ -30,11 +30,11 @@ export default function Hero() {
               Inspiring generations since 1632.
             </p>
           </div>
-          <div className="min-h-[50vw] lg:w-hero aspect-[15/11]- lg:min-h-[500px] flex-1- gap-6 relative">
+          <div className="min-h-[50vw]- aspect-[15/11] lg:w-hero aspect-[15/11]- sm:min-h-[500px] flex-1- gap-6 relative">
             <div className="bg-[#F7F7F7] absolute inset-0 translate-x-28  lg:translate-x-28 translate-y-20"></div>
             <Image src={hero} alt="" className="object-cover object-[100%_50%]" fill />
           </div>
-          <div className="-translate-y-16 sm:-translate-y-20 md:translate-y-0 md:absolute inset-x-0 -bottom-24 sm:-bottom-10 lg:bottom-[148px] mx-auto lg:mx-0 flex flex-col lg:flex-row gap-3 w-[90%]">
+          <div className="-translate-y-20 sm:-translate-y-20 md:translate-y-0 md:absolute inset-x-0 -bottom-24 sm:-bottom-10 lg:bottom-[148px] mx-auto lg:mx-0 flex flex-col lg:flex-row gap-3 w-[90%]">
             {data.map((el, i) => {
               return (
                 <div

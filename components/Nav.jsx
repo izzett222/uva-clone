@@ -18,7 +18,7 @@ export default function Nav() {
             return (
               <div
                 key={i}
-                className="border-[#E6E6E6] text-[22px] sm:text-[24px] leading-[1.15] font-bold rounded-[4px] px-4 pt-4 pb-9 border"
+                className="border-[#E6E6E6] text-[22px] hover:shadow-medium hover:underline underline-offset-2 hover:text-red duration-200 sm:text-[24px] leading-[1.15] font-bold rounded-[4px] px-4 pt-4 pb-9 border"
               >
                 {el}
               </div>
