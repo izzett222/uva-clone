@@ -73,10 +73,10 @@ export default function Footer() {
   return (
     <footer className="mt-16 bg-[#1f1d20] pt-9">
       <Wrapper>
-        <div className="flex justify-between items-center mb-12">
+        <div className="flex justify-between items-center mb-12 relative">
           <Image src={logo} alt="" className="h-[38px]" />
-          <div className="bg-[#F9F9F9] py-2 px-2 rounded-[2px] flex justify-center items-center w-fit -translate-y-2">
-            <Image src={right} alt="" className="-translate-y-[1px] -rotate-90" />
+          <div className="bg-[#F9F9F9] absolute top-0 right-0 z-10 sm:static py-2 px-2 rounded-[2px] flex justify-center items-center w-fit -translate-y-2 flex-shrink-0">
+            <Image src={right} alt="" className="-translate-y-[1px] -rotate-90 " />
           </div>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4  sm:pb-16">
