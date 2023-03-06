@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Wrapper from "./Wrapper";
 import current from "/public/current.jpg";
-import right from "/public/black-right.svg";
+import current2 from "/public/current2.jpeg";
+import current3 from "/public/current3.jpeg";
 
 export default function Current() {
   const data = [
@@ -11,14 +12,14 @@ export default function Current() {
       text: "Discover everything an international student needs to know about studying at the UvA.",
     },
     {
-      img: current,
+      img: current2,
       title: "The UvA and the smart city",
       text: "Find out how our cities are becoming smarter every day. UvA researchers are examining the pitfalls and the potential.",
     },
     {
-      img: current,
-      title: "Study in Amsterdam Week 20 - 24 Februa",
-      text: "Discover everything an international student needs to know about studying at the UvA.",
+      img: current3,
+      title: "Bachelor's Week 17 - 25 March",
+      text: "Discover your Bachelor's at the UvA.",
     },
   ];
   return (

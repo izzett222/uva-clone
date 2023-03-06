@@ -4,51 +4,57 @@ import Wrapper from "./Wrapper";
 import current from "/public/current.jpg";
 import right from "/public/red-right.svg";
 import blackRight from "/public/black-right.svg";
+import news1 from "/public/news1.jpeg";
+import news2 from "/public/news2.jpeg";
+import news3 from "/public/news3.png";
+import news4 from "/public/news4.jpeg";
+import news5 from "/public/news5.jpeg";
+
 
 export default function News() {
   const data = [
     {
-      img: current,
+      img: news1,
       title: "Study in Amsterdam Week 20 - 24 Februa",
       text: "When it comes to enhancing the sustainability of plastic bottles, consumers are willing to pay - the more so when the alternative is visually distinctive consumers are willing to pay a bonus for bio-based alternatives - the more so when the alternative is visually distinctive. This follows from ...",
     },
     {
-      img: current,
+      img: news2,
       title: "The UvA and the smart city",
       text: "Find out how our cities are becoming smarter every day. UvA researchers are examining the pitfalls and the potential.",
     },
     {
-      img: current,
+      img: news3,
       title: "Study in Amsterdam Week 20 - 24 Februa",
       text: "The surface of Teflon – the non-stick coating in your pan – is incredibly slippery. Thanks to research carried out at the Institute of Physics (UvA) and research centre ARCNL, we finally know where this slipperiness ...",
     },
     {
-      img: current,
+      img: news4,
       title: "Study in Amsterdam Week 20 - 24 Februa",
       text: "The surface of Teflon – the non-stick coating in your pan – is incredibly slippery. Thanks to research carried out at the Institute of Physics (UvA) and research centre ARCNL, we finally know where this slipperiness ...",
     },
     {
-      img: current,
+      img: news5,
       title: "Study in Amsterdam Week 20 - 24 Februa",
       text: "The surface of Teflon – the non-stick coating in your pan – is incredibly slippery. Thanks to research carried out at the Institute of Physics (UvA) and research centre ARCNL, we finally know where this slipperiness ...",
     },
     {
-      img: current,
+      img: news1,
       title: "Study in Amsterdam Week 20 - 24 Februa",
       text: "The surface of Teflon – the non-stick coating in your pan – is incredibly slippery. Thanks to research carried out at the Institute of Physics (UvA) and research centre ARCNL, we finally know where this slipperiness ...",
     },
     {
-      img: current,
+      img: news2,
       title: "Study in Amsterdam Week 20 - 24 Februa",
       text: "The surface of Teflon – the non-stick coating in your pan – is incredibly slippery. Thanks to research carried out at the Institute of Physics (UvA) and research centre ARCNL, we finally know where this slipperiness ...",
     },
     {
-      img: current,
+      img: news3,
       title: "Study in Amsterdam Week 20 - 24 Februa",
       text: "The surface of Teflon – the non-stick coating in your pan – is incredibly slippery. Thanks to research carried out at the Institute of Physics (UvA) and research centre ARCNL, we finally know where this slipperiness ...",
     },
     {
-      img: current,
+      img: news4,
       title: "Study in Amsterdam Week 20 - 24 Februa",
       text: "The surface of Teflon – the non-stick coating in your pan – is incredibly slippery. Thanks to research carried out at the Institute of Physics (UvA) and research centre ARCNL, we finally know where this slipperiness ...              ",
     },
