@@ -65,33 +65,6 @@ export default function Header() {
     },
     { text: "Library", link: "/library", links: [] },
   ];
-  const mobData = ["Education", "Research", "News & Events", "About the UvA"];
-  const data1 = [
-    {
-      text: "Bachelor's",
-      link: "/education",
-    },
-    {
-      text: "Master's",
-      link: "/education",
-    },
-    {
-      text: "Professional development",
-      link: "/education",
-    },
-    {
-      text: "Summer school",
-      link: "/education",
-    },
-    {
-      text: "Open programmes",
-      link: "/",
-    },
-    {
-      text: "Exchange",
-      link: "/",
-    },
-  ];
   useEffect(() => {
     const handleScrolled = () => {
       window.scrollY > 100 ? setScrolled(true) : setScrolled(false);
@@ -124,7 +97,6 @@ export default function Header() {
                   alt=""
                 />
               )}
-              {scrolled && (
                 <Image
                   src={logoSm}
                   className={`${
@@ -132,7 +104,6 @@ export default function Header() {
                   }  h-[52px] w-[34px] translate-y-1`}
                   alt=""
                 />
-              )}
             </div>
             <div className="flex h-[42px] gap-x-3 items-center flex-1 flex-row-reverse lg:flex-row lg:justify-end">
               <form
@@ -150,16 +121,16 @@ export default function Header() {
               </form>
               <Link
                 href={"/"}
-                className="flex items-center gap-[5px] px-2 order-3 lg:order-[initial]"
+                className="flex items-center gap-[5px] px-2 order-3 lg:order-[initial] group"
               >
-                <span className="hidden sm:inline-block font-sans font-semibold leading-[16px] whitespace-nowrap w-max">
+                <span className="hidden sm:inline-block group-hover:underline underline-offset-1 font-sans font-semibold leading-[16px] whitespace-nowrap w-max">
                   Compare programmes
                 </span>
-                <Image src={heart} alt="" />
+                <Image src={heart} className="hover:shadow-menu-hover" alt="" />
               </Link>
               <Link
                 href={"/"}
-                className="flex h-full aspect-square items-center justify-center border border-[#1F1D21] rounded-sm order-1 lg:order-[initial]"
+                className=" hover:shadow-menu-hover duration-200 flex h-full aspect-square items-center justify-center border border-[#1F1D21] rounded-sm order-1 lg:order-[initial]"
               >
                 <Image src={nl} alt="" className="" />
               </Link>
@@ -168,7 +139,7 @@ export default function Header() {
                 onClick={() => setOpen(!open)}
               >
                 <span className="hidden sm:inline-block">Menu</span>
-                {open && <Image src={cross} className="ml-3.5" alt="" />}
+                {open && <div className="px-2 sm:px-0"><Image src={cross} className="sm:ml-3.5" alt="" /></div>}
                 {!open && (
                   <div className="flex flex-col gap-1 px-2 h-full sm:h-auto justify-center items-center">
                     <div className="h-[1.5px] bg-white w-[24px]"></div>
@@ -214,7 +185,7 @@ export default function Header() {
         </Wrapper>
       </div>
       {open && (
-        <div className="absolute bottom-0 translate-y-full inset-x-0 bg-[#d6d6d6] flex flex-col font-sans">
+        <div className="absolute lg:hidden bottom-0 translate-y-full inset-x-0 bg-[#d6d6d6] flex flex-col font-sans">
           <div className="flex border-b border-b-white">
             <div className="w-10 h-10"></div>
             <div className=" py-[5px] pr-4 text-[14px] leading-[28px]">
