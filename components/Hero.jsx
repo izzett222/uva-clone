@@ -21,7 +21,7 @@ export default function Hero() {
   return (
     <div className="overflow-hidden">
       <Wrapper>
-        <div className="sm:w-[64.66667%] justify-between lg:w-auto lg:max-w-[1141.6px] mx-auto flex flex-col lg:flex-row relative pt-6 sm:pt-[72px] sm:pb-[86px] -mb-8 sm:-mb-20 md:mb-32 lg:mb-20">
+        <div className="sm:w-[64.66667%] justify-between lg:w-auto lg:max-w-[1141.6px] mx-auto flex flex-col lg:flex-row relative -pt-6 sm:pt-[72px] sm:pb-[86px] -mb-8 sm:-mb-20 md:mb-32 lg:mb-20">
           <div className="flex-1- lg:w-hero mb-6 pt-6 lg:pt-[72px]">
             <h1 className="text-[42px] leading-[59px] font-bold text-[#1f1d21]">
               University of Amsterdam

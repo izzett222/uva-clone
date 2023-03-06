@@ -56,13 +56,13 @@ export default function News() {
   return (
     <div className="pb-16 bg-[#E6E6E6] pt-16 overflow-hidden">
       <Wrapper>
-        <h2 className="title mb-6 flex justify-between items-center">News <Image src={blackRight} alt="" className="w-5 h-5 opacity-50" /></h2>
+        <h2 className="title mb-9 flex justify-between items-center">News <Image src={blackRight} alt="" className="w-5 h-5 opacity-50" /></h2>
         <div className="flex">
           {data.map((el, i) => {
             return (
               <div
                 key={i}
-                className="w-[90%] min-[470px]:w-[60%]  sm:w-[45%] lg:w-[23%] flex-shrink-0 mr-4 rounded-[4px] border border-[#E6E6E6] bg-white"
+                className="w-[90%] min-[470px]:w-[60%] hover:shadow-medium duration-200 sm:w-[45%] lg:w-[23%] flex-shrink-0 mr-4 rounded-[4px] border border-[#E6E6E6] bg-white"
               >
                 <div className="relative  aspect-[7/3]">
                   <Image src={el.img} alt="" className="object-cover" fill />

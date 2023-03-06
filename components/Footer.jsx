@@ -79,7 +79,7 @@ export default function Footer() {
             <Image src={right} alt="" className="-translate-y-[1px] -rotate-90" />
           </div>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4  sm:pb-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4  sm:pb-16">
           {data.map((el, i) => {
             return <FooterList key={i} {...el} />;
           })}
