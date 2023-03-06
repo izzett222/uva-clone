@@ -1,0 +1,3 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="24"  height="24" ><defs><symbol id="icon-linkedin" viewBox="0 0 24 24" preserveAspectRatio="xMinYMin"><path d="M1.55 8.067h4.308v14.941H1.55V8.067ZM1 3.667C1 2.2 2.008 1.1 3.658 1.1c1.559 0 2.567 1.1 2.567 2.567 0 1.375-1.008 2.566-2.658 2.566C2.008 6.233 1 5.133 1 3.667Zm22 19.341h-4.858v-7.7c0-2.016-.734-3.391-2.475-3.391-1.284 0-2.017.916-2.292 1.833-.092.367-.092.733-.092 1.192v8.066H8.425s.092-13.658 0-14.941h4.858v2.383c.275-1.008 1.834-2.475 4.309-2.475 3.025 0 5.408 2.108 5.408 6.783v8.25Z"></path></symbol></defs>
+                            <use xlink:href="#icon-linkedin" fill="#D6D6D6"></use>
+                        </svg>

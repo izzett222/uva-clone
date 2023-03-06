@@ -1,0 +1,3 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="c-searchform__icon" role="presentation" aria-hidden="true" width="24"  height="24" ><defs><symbol id="icon-search" viewBox="0 0 24 24" preserveAspectRatio="xMinYMin"><path d="M15.06 16.104c-3.441 2.739-8.434 2.547-11.58-.6C.091 12.117.127 6.592 3.556 3.163s8.954-3.465 12.341-.078c3.282 3.282 3.35 8.571.232 12.016l7.766 7.777-1.031 1.031zM4.365 14.618c2.904 2.904 7.641 2.873 10.58-.066s2.971-7.677.067-10.581-7.64-2.873-10.58.067-2.971 7.676-.067 10.58z"></path></symbol></defs>
+                                <use xlink:href="#icon-search" fill="#575757"></use>
+                            </svg>

@@ -1,0 +1,7 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" class="ui-icon hamburger hamburger--lines hamburger-animation--keyframes" role="presentation" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="24" height="24" viewBox="0 0 24 24">
+    <g fill="#FFFFFF">
+      <path class="line line--top" d="M0 12 h24 v1 H0 z" fill="#FFFFFF"></path>
+      <path class="line line--center" d="M0 12 h24 v1 H0 z" fill="#FFFFFF"></path>
+      <path class="line line--bottom" d="M0 12 h24 v1 H0 z" fill="#FFFFFF"></path>
+    </g>
+  </svg>
