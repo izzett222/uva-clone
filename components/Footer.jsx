@@ -12,6 +12,9 @@ import youtube from "/public/youtube.svg";
 import Link from "next/link";
 
 export default function Footer() {
+  function scrollToTop() {
+    window.scrollTo(0, 0);
+  }
   const data = [
     {
       title: "Education & research",
@@ -75,7 +78,7 @@ export default function Footer() {
       <Wrapper>
         <div className="flex justify-between items-center mb-12 relative">
           <Image src={logo} alt="" className="h-[38px]" />
-          <div className="bg-[#F9F9F9] absolute top-0 right-0 z-10 sm:static py-2 px-2 rounded-[2px] flex justify-center items-center w-fit -translate-y-2 flex-shrink-0">
+          <div onClick={scrollToTop} className="bg-[#F9F9F9] absolute top-0 right-0 z-10 sm:static py-2 px-2 rounded-[2px] flex justify-center items-center w-fit -translate-y-2 flex-shrink-0">
             <Image src={right} alt="" className="-translate-y-[1px] -rotate-90 " />
           </div>
         </div>
