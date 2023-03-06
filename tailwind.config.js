@@ -17,7 +17,8 @@ module.exports = {
       boxShadow: {
         menu: "0 0 10px rgb(0 0 0 / 15%)",
         small: "0 2px 8px rgb(0 0 0 / 25%)",
-        medium: "0 10px 20px rgb(0 0 0 / 15%), 0 5px 15px rgb(0 0 0 / 25%)"
+        medium: "0 10px 20px rgb(0 0 0 / 15%), 0 5px 15px rgb(0 0 0 / 25%)",
+        hover: "0 4px 4px rgb(0 0 0 / 15%)"
       },
       colors: {
         red: "#bd0032",

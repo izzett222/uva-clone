@@ -7,22 +7,58 @@ import search from "/public/search.svg";
 import heart from "/public/heart.svg";
 import nl from "/public/nl.svg";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Header() {
-    const data = ["Education", "Research", "News & Events", "About the UvA", "Library"]
+  const [scrolled, setScrolled] = useState(false);
+  const data = [
+    "Education",
+    "Research",
+    "News & Events",
+    "About the UvA",
+    "Library",
+  ];
+  useEffect(() => {
+    const handleScrolled = () => {
+      window.scrollY > 100 ? setScrolled(true) : setScrolled(false);
+    };
+    document.addEventListener("scroll", handleScrolled);
+    return () => document.removeEventListener("scroll", handleScrolled);
+  }, []);
+
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-white">
-      <div className="h-[70px] sm:h-[84px] bg-white shadow-menu z-20 relative">
+      <div
+        className={`h-[70px] ${
+          !scrolled && "sm:h-[84px]"
+        } duration-200 bg-white shadow-menu z-20 relative`}
+      >
         <Wrapper>
-          <div className="flex h-[70px] sm:h-[84px] justify-between items-center">
+          <div
+            className={`flex h-[70px] ${
+              !scrolled && "sm:h-[84px]"
+            } justify-between items-center`}
+          >
             <div className="lg:flex-1">
-              <Image src={logo} className="hidden lg:block" alt="" />
-              <Image
-                src={logoMd}
-                className="hidden sm:block lg:hidden h-[38px]"
-                alt=""
-              />
-              <Image src={logoSm} className="sm:hidden h-[52px] w-[34px] translate-y-1" alt="" />
+              {!scrolled && (
+                <Image src={logo} className="hidden lg:block" alt="" />
+              )}
+              {!scrolled && (
+                <Image
+                  src={logoMd}
+                  className="hidden sm:block lg:hidden h-[38px]"
+                  alt=""
+                />
+              )}
+              {scrolled && (
+                <Image
+                  src={logoSm}
+                  className={`${
+                    scrolled ? "sm:block" : "sm:hidden"
+                  }  h-[52px] w-[34px] translate-y-1`}
+                  alt=""
+                />
+              )}
             </div>
             <div className="flex h-[42px] gap-x-3 items-center flex-1 flex-row-reverse lg:flex-row lg:justify-end">
               <form
@@ -38,7 +74,10 @@ export default function Header() {
                   <Image src={search} className="" alt="" />
                 </div>
               </form>
-              <Link href={"/"} className="flex items-center gap-[5px] px-2 order-3 lg:order-[initial]">
+              <Link
+                href={"/"}
+                className="flex items-center gap-[5px] px-2 order-3 lg:order-[initial]"
+              >
                 <span className="hidden sm:inline-block font-sans font-semibold leading-[16px] whitespace-nowrap w-max">
                   Compare programmes
                 </span>
@@ -62,13 +101,28 @@ export default function Header() {
           </div>
         </Wrapper>
       </div>
-      <div className="hidden lg:block shadow-menu bg-[#F5F5F5]">
+      <div
+        className={`hidden lg:block shadow-menu bg-[#F5F5F5] ${
+          scrolled && "-translate-y-[54px]"
+        } duration-500`}
+      >
         <Wrapper>
-            <div className="flex h-[54px]">
-                {data.map((el, i) => {
-                    return <div key={i} className="pt-3 pb-2 mr-12 text-txt text-xl leading-[32px] hover:cursor-pointer hover:text-[#bd0032] hover:underline">{el}</div>
-                })}
-            </div>
+          <div className={`flex h-[54px]`}>
+            {data.map((el, i) => {
+              return (
+                <div key={i} className="relative group">
+                  <div className="pt-3 peer pb-2 mr-6 xl:mr-12 text-txt text-xl leading-[32px] hover:cursor-pointer hover:text-[#bd0032] hover:border-b-2 hover:border-b-red">
+                    {el}
+                  </div>
+                  <div className="bg-[#F5F5F5] px-5 pt-3 pb-4 absolute z-20 bottom-0 translate-y-full -translate-x-5 shadow-hover w-[300px] hidden group-hover:flex font-sans duration-150 delay-150 flex-col">
+                    {["About the University", "Alumni", "Contact and locations", "Organisation", "Policy and regulations", "Working at the UvA"].map((el, i) => {
+                      return <Link key={i} className="my-1.5 hover:underline hover:text-red underline-offset-[3px]" href="/">{el}</Link>
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </Wrapper>
       </div>
     </header>
